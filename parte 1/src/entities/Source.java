@@ -4,11 +4,8 @@ import eduni.simjava.distributions.Sim_uniform_obj;
 
 public class Source extends Entity { // The class for the source
 
-	private int previousSimClock;
-
 	public Source(String name, double mean, double avg) {
 		super(name, mean, avg, 0, new double[] { 1.0 });
-		this.previousSimClock = -1;
 	}
 
 
