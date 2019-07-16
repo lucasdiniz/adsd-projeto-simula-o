@@ -39,4 +39,33 @@ class ApiManager extends Sim_entity {
     add_port(outDelete);
     add_port(outHead);
   }
+
+ /**
+  ** Calls the handlers based on a probability distribution
+  **/
+  public void body() {
+    while (Sim_system.running()) {
+      Sim_event e = new Sim_event();
+      // get next event
+      sim_get_next(e);
+      // handle event
+      double delaySample = delay.sample();
+      sim_trace(1, "API manager service started with delay -> " + delaySample);
+      sim_process(delaySample);
+      // finished
+      sim_completed(e);
+      
+      double probSample = prob.sample();
+      if (outPost < 0.333) {
+        sim_trace(1, "Calling the GET/POST Handler");
+        sim_schedule(out1, 0.0, 1);
+      } else if (outPost < 0.666) {
+        sim_trace(1, "Calling the PUT/DELETE Handler");
+        sim_schedule(out2, 0.0, 1);
+      } else if (outDelete < 0.999) {
+        sim_trace(1, "Calling the HEAD Handler");
+        sim_schedule(outHead, 0.0, 1);
+      }      
+    }
+  }
 }
