@@ -7,7 +7,7 @@ import eduni.simjava.distributions.*;
  ** (get/post, put/delete and head)
  **/
 class ApiManager extends Sim_entity {
-  private Sim_port inputSource, outPost, outDelete, outHead;
+  private Sim_port inputApiManager, outPost, outDelete, outHead;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
   Sim_stat stat;
@@ -27,14 +27,14 @@ class ApiManager extends Sim_entity {
     set_stat(stat);    
 
     // Shall receive events from source entity
-    inputSource = new Sim_port("In");
+    inputApiManager = new Sim_port("inputApiManager");
     
     // Output ports to the handlers    
     outPost = new Sim_port("outPost");    
     outDelete = new Sim_port("outDelete");
     outHead = new Sim_port("outHead");
     
-    add_port(in);
+    add_port(inputApiManager);
     add_port(outPost);
     add_port(outDelete);
     add_port(outHead);
