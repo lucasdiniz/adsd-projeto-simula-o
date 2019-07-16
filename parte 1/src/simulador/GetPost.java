@@ -35,4 +35,24 @@ class GetPost extends Sim_entity {
     add_port(inputApiManager);
     add_port(outBd);
   }
+
+ /**
+  ** Processes the event and calls the Bd entity
+  **/
+  public void body() {
+    while (Sim_system.running()) {
+      Sim_event e = new Sim_event();
+      // get next event
+      sim_get_next(e);
+      // handle event
+      double delaySample = delay.sample();
+      sim_trace(1, "GET/POST handler started with delay -> " + delaySample);
+      sim_process(delaySample);
+      // finished
+      sim_completed(e);
+      
+      sim_trace(1, "Calling the BD...");
+      sim_schedule(outBd, 0.0, 1);
+  }
+
 }

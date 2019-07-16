@@ -9,6 +9,8 @@ class Disk extends Sim_entity {
   private Sim_port inputPutDelete, outResponse;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
+  private final double PUT_TIME = 0.1;
+  private final double DELETE_TIME = 0.1;
   Sim_stat stat;
 
   Disk(String name, double mean, double variance, long seed) {
@@ -33,5 +35,31 @@ class Disk extends Sim_entity {
     
     add_port(inputPutDelete);
     add_port(outResponse);
+  }
+
+ /**
+  ** Performes a put/delete based on a probability distribution
+  **/
+  public void body() {
+    while (Sim_system.running()) {
+      Sim_event e = new Sim_event();
+      // get next event
+      sim_get_next(e);
+      // handle event
+      double delaySample = delay.sample();
+      sim_trace(1, "Disk started with delay -> " + delaySample);
+      sim_process(delaySample);
+      // finished
+      sim_completed(e);
+      
+      double probSample = prob.sample();
+      if (outPost < 0.5) {
+        sim_trace(1, "DISK -> Put");
+        sim_schedule(outResponse, PUT_TIME, 1);
+      } else {
+        sim_trace(1, "DISK -> Delete");
+        sim_schedule(outResponse, DELETE_TIME, 1);
+      }       
+    }
   }
 }

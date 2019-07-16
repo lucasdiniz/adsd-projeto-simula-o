@@ -30,6 +30,25 @@ class Response extends Sim_entity {
     inputDisco = new Sim_port("inputDisco");
     inputHead = new Sim_port("inputHead");
     
-    add_port(inputGetPost);
+    add_port(inputBd);
+    add_port(inputDisco);
+    add_port(inputHead);
+  }
+
+ /**
+  ** Creates a response and finishes
+  **/
+  public void body() {
+    while (Sim_system.running()) {
+      Sim_event e = new Sim_event();
+      // get next event
+      sim_get_next(e);
+      // handle event
+      double delaySample = delay.sample();
+      sim_trace(1, "HEAD handler started with delay -> " + delaySample);
+      sim_process(delaySample);
+      // finished
+      sim_completed(e);
+      sim_trace(1, "Response created. FINISHED!");
   }
 }
