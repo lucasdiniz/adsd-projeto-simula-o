@@ -27,7 +27,7 @@ class Response extends Sim_entity {
 
     // Input for events coming from the bd/disk/head
     inputBd = new Sim_port("inputBd");
-    inputDisco = new Sim_port("inputDisco");
+    inputDisco = new Sim_port("inputDisk");
     inputHead = new Sim_port("inputHead");
     
     add_port(inputBd);
@@ -51,4 +51,5 @@ class Response extends Sim_entity {
       sim_completed(e);
       sim_trace(1, "Response created. FINISHED!");
   }
+}
 }

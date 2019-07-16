@@ -1,4 +1,4 @@
-package simulator;
+package simulador;
 
 
 import eduni.simjava.*;
@@ -17,7 +17,7 @@ public class Simulador {
 
       GetPost getPost = new GetPost("GetPost", 5, 1, seed);
       PutDelete putDelete = new PutDelete("PutDelete", 6, 1.5, seed);
-      Head head = new PutDelete("Head", 4, 1.3, seed);
+      Head head = new Head("Head", 4, 1.3, seed);
 
       Bd bd = new Bd("Bd", 3, 0.2, seed);
       Disk disk = new Disk("Disk", 4, 0.2, seed);

@@ -1,4 +1,4 @@
 cd src
-javac -cp ../simjava/simjava.jar entities/*.java *.java
-java -cp .:../simjava/simjava.jar Main
+javac -cp ../simjava/simjava.jar simulador/*.java
+java -cp .:../simjava/simjava.jar simulador.Simulador
 cd ..

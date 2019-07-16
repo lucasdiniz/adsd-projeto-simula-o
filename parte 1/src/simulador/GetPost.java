@@ -56,3 +56,4 @@ class GetPost extends Sim_entity {
   }
 
 }
+}

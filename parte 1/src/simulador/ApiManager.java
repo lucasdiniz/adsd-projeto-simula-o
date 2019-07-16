@@ -56,13 +56,13 @@ class ApiManager extends Sim_entity {
       sim_completed(e);
       
       double probSample = prob.sample();
-      if (outPost < 0.333) {
+      if (probSample < 0.333) {
         sim_trace(1, "Calling the GET/POST Handler...");
-        sim_schedule(out1, 0.0, 1);
-      } else if (outPost < 0.666) {
+        sim_schedule(outPost, 0.0, 1);
+      } else if (probSample < 0.666) {
         sim_trace(1, "Calling the PUT/DELETE Handler...");
-        sim_schedule(out2, 0.0, 1);
-      } else if (outDelete < 0.999) {
+        sim_schedule(outDelete, 0.0, 1);
+      } else if (probSample < 0.999) {
         sim_trace(1, "Calling the HEAD Handler...");
         sim_schedule(outHead, 0.0, 1);
       }      

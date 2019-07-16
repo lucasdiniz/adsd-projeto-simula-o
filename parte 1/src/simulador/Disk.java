@@ -53,7 +53,7 @@ class Disk extends Sim_entity {
       sim_completed(e);
       
       double probSample = prob.sample();
-      if (outPost < 0.5) {
+      if (probSample < 0.5) {
         sim_trace(1, "DISK -> Put");
         sim_schedule(outResponse, PUT_TIME, 1);
       } else {

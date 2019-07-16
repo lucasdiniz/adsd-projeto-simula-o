@@ -55,3 +55,4 @@ class Head extends Sim_entity {
       sim_schedule(outResponse, 0.0, 1);
   }
 }
+}
