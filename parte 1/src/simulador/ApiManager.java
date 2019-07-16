@@ -1,4 +1,4 @@
-package simulador;
+package simulator;
 
 import eduni.simjava.*;
 import eduni.simjava.distributions.*;
