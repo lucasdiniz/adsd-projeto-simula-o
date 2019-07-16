@@ -12,7 +12,7 @@ public class Simulador {
       Sim_system.initialise();
       long seed = 666;
       // Create entities
-      Source source = new Source("Source", 40, 3, seed);
+      Source source = new Source("Source", 10, 3, seed);
       ApiManager apiManager = new ApiManager("ApiManager", 5, 2, seed);
 
       GetPost getPost = new GetPost("GetPost", 5, 1, seed);

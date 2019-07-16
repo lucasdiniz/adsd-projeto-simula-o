@@ -9,8 +9,8 @@ class Disk extends Sim_entity {
   private Sim_port inputPutDelete, outResponse;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
-  private final double PUT_TIME = 0.1;
-  private final double DELETE_TIME = 0.1;
+  private final double PUT_TIME = 10;
+  private final double DELETE_TIME = 10;
   Sim_stat stat;
 
   Disk(String name, double mean, double variance, long seed) {

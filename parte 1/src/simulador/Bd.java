@@ -9,8 +9,8 @@ class Bd extends Sim_entity {
   private Sim_port inputGetPost, outResponse;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
-  private final double WRITE_TIME = 0.3;
-  private final double READ_TIME = 0.1;
+  private final double WRITE_TIME = 6;
+  private final double READ_TIME = 1;
   Sim_stat stat;
 
   Bd(String name, double mean, double variance, long seed) {

@@ -7,16 +7,16 @@
 Version: SimJava 2.0
 
 Simulation date:         16 de julho de 2019
-Simulation start time:   00:23:33 BRT
-Simulation end time:     00:23:33 BRT
+Simulation start time:   00:31:42 BRT
+Simulation end time:     00:31:43 BRT
 
 ############################################################
 #            Overall simulation run information            #
 ############################################################
 
-Total simulated time:    99992.29897725467
+Total simulated time:    2511.194512156495
 Total transient time:    0.0
-Total steady state time: 99992.29897725467
+Total steady state time: 2511.194512156495
 Transient condition:     None
 Termination condition:   None
 Output analysis method:  None
@@ -37,15 +37,15 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          4.974848565035414
-Sample variance:      2.0939260985435917
-Sample std deviation: 1.4470404619579895
-Maximum:              9.403663339224295
-Minimum:              1.07532845523383
+Sample mean:          4.974848565035434
+Sample variance:      2.093926098543405
+Sample std deviation: 1.4470404619579251
+Maximum:              9.403663339217474
+Minimum:              1.0753284552333753
 
 - Utilisation
 
-Sample mean:          0.012438079271902347
+Sample mean:          0.49526714686502615
 
 - Waiting time
 
@@ -67,15 +67,15 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          5.059105315896187
-Sample variance:      0.7901876450358652
-Sample std deviation: 0.8889249940438536
-Maximum:              7.40108156936185
-Minimum:              2.991209171996161
+Sample mean:          5.0591053158964305
+Sample variance:      0.7901876450352445
+Sample std deviation: 0.8889249940435046
+Maximum:              7.401081569358212
+Minimum:              2.9912091719995715
 
 - Utilisation
 
-Sample mean:          0.003794621211564742
+Sample mean:          0.15109657848303965
 
 - Waiting time
 
@@ -89,30 +89,30 @@ Minimum:              0.0
 
 - Queue length
 
-Sample mean:          0.0
-Sample variance:      0.0
-Sample std deviation: 0.0
+Sample mean:          1.1055726948188217E-4
+Sample variance:      1.1054504657204688E-4
+Sample std deviation: 0.010514040449420331
 Maximum:              1.0
 Minimum:              0.0
 
 - Service time
 
-Sample mean:          6.050292389602656
-Sample variance:      1.1557390889158177
-Sample std deviation: 1.0750530633023738
-Maximum:              8.940712337862351
-Minimum:              3.539743735709635
+Sample mean:          6.050292389603277
+Sample variance:      1.1557390889161543
+Sample std deviation: 1.0750530633025304
+Maximum:              8.94071233786417
+Minimum:              3.539743735708157
 
 - Utilisation
 
-Sample mean:          0.004719591520706568
+Sample mean:          0.18792761934788982
 
 - Waiting time
 
-Sample mean:          0.0
-Sample variance:      0.0
-Sample std deviation: 0.0
-Maximum:              0.0
+Sample mean:          0.003559369338486016
+Sample variance:      9.881905868448415E-4
+Sample std deviation: 0.03143549883244803
+Maximum:              0.27763080840190923
 Minimum:              0.0
 
 --------------------------- Head ---------------------------
@@ -127,15 +127,15 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          3.9354143165354443
-Sample variance:      1.3106952718662417
-Sample std deviation: 1.1448560048609788
-Maximum:              6.737654199037934
-Minimum:              1.1303166344441706
+Sample mean:          3.935414316534991
+Sample variance:      1.3106952718665685
+Sample std deviation: 1.1448560048611216
+Maximum:              6.737654199040662
+Minimum:              1.130316634438259
 
 - Utilisation
 
-Sample mean:          0.003817645884817307
+Sample mean:          0.1520133891882704
 
 - Waiting time
 
@@ -157,15 +157,15 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          3.026432700834997
-Sample variance:      0.1580375290067134
-Sample std deviation: 0.39753934271555236
-Maximum:              4.07379632172524
-Minimum:              2.1016414312034613
+Sample mean:          3.026432700835206
+Sample variance:      0.158037529007036
+Sample std deviation: 0.3975393427159581
+Maximum:              4.073796321721147
+Minimum:              2.1016414312025518
 
 - Utilisation
 
-Sample mean:          0.0022699993387916466
+Sample mean:          0.09038824012390767
 
 - Waiting time
 
@@ -187,15 +187,15 @@ Minimum:              0.0
 
 - Service time
 
-Sample mean:          4.018364184170603
-Sample variance:      0.15409854518869104
-Sample std deviation: 0.39255387552371845
-Maximum:              5.07379632172524
-Minimum:              3.1016414312034613
+Sample mean:          4.018364184171039
+Sample variance:      0.15409854518882096
+Sample std deviation: 0.39255387552388393
+Maximum:              5.073796321721375
+Minimum:              3.1016414312026654
 
 - Utilisation
 
-Sample mean:          0.003134565457251901
+Sample mean:          0.124814069498814
 
 - Waiting time
 
@@ -209,29 +209,29 @@ Minimum:              0.0
 
 - Queue length
 
-Sample mean:          0.0
-Sample variance:      0.0
-Sample std deviation: 0.0
-Maximum:              1.0
+Sample mean:          0.08240155237179632
+Sample variance:      0.08043580020739391
+Sample std deviation: 0.2836120593476129
+Maximum:              2.0
 Minimum:              0.0
 
 - Service time
 
-Sample mean:          4.982215249779922
-Sample variance:      1.0469630492717994
-Sample std deviation: 1.0232121233018105
-Maximum:              8.113860209225095
-Minimum:              2.224838136768085
+Sample mean:          4.982215249779995
+Sample variance:      1.046963049271697
+Sample std deviation: 1.0232121233017604
+Maximum:              8.113860209223276
+Minimum:              2.224838136765811
 
 - Utilisation
 
-Sample mean:          0.012456497402148017
+Sample mean:          0.49600053138670497
 
 - Waiting time
 
-Sample mean:          0.0
-Sample variance:      0.0
-Sample std deviation: 0.0
-Maximum:              0.0
+Sample mean:          0.8277053044369237
+Sample variance:      2.596260955752697
+Sample std deviation: 1.6112917041158925
+Maximum:              6.505893055399156
 Minimum:              0.0
 
