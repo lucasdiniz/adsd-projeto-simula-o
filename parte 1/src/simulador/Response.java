@@ -3,16 +3,15 @@ package simulador;
 import eduni.simjava.*;
 import eduni.simjava.distributions.*;
 /**
- ** Api manager that will handle requests and forward it to one of 3 handlers
- ** (get/post, put/delete and head)
+ ** BD entity that shall be called by the Get/Post handler
  **/
-class ApiManager extends Sim_entity {
-  private Sim_port inputSource, outPost, outDelete, outHead;
+class Response extends Sim_entity {
+  private Sim_port inputBd, inputDisco, inputHead;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
   Sim_stat stat;
 
-  ApiManager(String name, double mean, double variance, long seed) {
+  Response(String name, double mean, double variance, long seed) {
     super(name);
     this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
     this.prob = new Sim_random_obj("Probability", seed);
@@ -26,17 +25,11 @@ class ApiManager extends Sim_entity {
     stat.add_measure(Sim_stat.WAITING_TIME);    
     set_stat(stat);    
 
-    // Shall receive events from source entity
-    inputSource = new Sim_port("inputSource");
+    // Input for events coming from the bd/disk/head
+    inputBd = new Sim_port("inputBd");
+    inputDisco = new Sim_port("inputDisco");
+    inputHead = new Sim_port("inputHead");
     
-    // Output ports to the handlers    
-    outPost = new Sim_port("outPost");    
-    outDelete = new Sim_port("outDelete");
-    outHead = new Sim_port("outHead");
-    
-    add_port(inputSource);
-    add_port(outPost);
-    add_port(outDelete);
-    add_port(outHead);
+    add_port(inputGetPost);
   }
 }

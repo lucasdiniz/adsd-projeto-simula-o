@@ -3,16 +3,16 @@ package simulador;
 import eduni.simjava.*;
 import eduni.simjava.distributions.*;
 /**
- ** Api manager that will handle requests and forward it to one of 3 handlers
- ** (get/post, put/delete and head)
+ ** Handler for the Put/Delete that might be called by the 
+ ** API Manager based on a probability distribution.
  **/
-class ApiManager extends Sim_entity {
-  private Sim_port inputSource, outPost, outDelete, outHead;
+class PutDelete extends Sim_entity {
+  private Sim_port inputApiManager, outDisk;
   private Sim_normal_obj delay;
   private Sim_random_obj prob;
   Sim_stat stat;
 
-  ApiManager(String name, double mean, double variance, long seed) {
+  PutDelete(String name, double mean, double variance, long seed) {
     super(name);
     this.delay = new Sim_normal_obj("Delay", mean, variance, seed);
     this.prob = new Sim_random_obj("Probability", seed);
@@ -26,17 +26,13 @@ class ApiManager extends Sim_entity {
     stat.add_measure(Sim_stat.WAITING_TIME);    
     set_stat(stat);    
 
-    // Shall receive events from source entity
-    inputSource = new Sim_port("inputSource");
+    // Input for events coming from the api manager
+    inputApiManager = new Sim_port("inputApiManager");
     
-    // Output ports to the handlers    
-    outPost = new Sim_port("outPost");    
-    outDelete = new Sim_port("outDelete");
-    outHead = new Sim_port("outHead");
+    // Output port to the disk enty
+    outDisk = new Sim_port("outDisk");
     
-    add_port(inputSource);
-    add_port(outPost);
-    add_port(outDelete);
-    add_port(outHead);
+    add_port(inputApiManager);
+    add_port(outDisk);
   }
 }
