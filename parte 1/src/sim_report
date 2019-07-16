@@ -1,0 +1,237 @@
+############################################################
+#                                                          #
+#                    SIMULATION REPORT                     #
+#                                                          #
+############################################################
+
+Version: SimJava 2.0
+
+Simulation date:         16 de julho de 2019
+Simulation start time:   00:23:33 BRT
+Simulation end time:     00:23:33 BRT
+
+############################################################
+#            Overall simulation run information            #
+############################################################
+
+Total simulated time:    99992.29897725467
+Total transient time:    0.0
+Total steady state time: 99992.29897725467
+Transient condition:     None
+Termination condition:   None
+Output analysis method:  None
+
+############################################################
+#               Simulation run measurements                #
+############################################################
+
+------------------------ ApiManager ------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          4.974848565035414
+Sample variance:      2.0939260985435917
+Sample std deviation: 1.4470404619579895
+Maximum:              9.403663339224295
+Minimum:              1.07532845523383
+
+- Utilisation
+
+Sample mean:          0.012438079271902347
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------- GetPost --------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          5.059105315896187
+Sample variance:      0.7901876450358652
+Sample std deviation: 0.8889249940438536
+Maximum:              7.40108156936185
+Minimum:              2.991209171996161
+
+- Utilisation
+
+Sample mean:          0.003794621211564742
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------ PutDelete -------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          6.050292389602656
+Sample variance:      1.1557390889158177
+Sample std deviation: 1.0750530633023738
+Maximum:              8.940712337862351
+Minimum:              3.539743735709635
+
+- Utilisation
+
+Sample mean:          0.004719591520706568
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- Head ---------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          3.9354143165354443
+Sample variance:      1.3106952718662417
+Sample std deviation: 1.1448560048609788
+Maximum:              6.737654199037934
+Minimum:              1.1303166344441706
+
+- Utilisation
+
+Sample mean:          0.003817645884817307
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+---------------------------- Bd ----------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          3.026432700834997
+Sample variance:      0.1580375290067134
+Sample std deviation: 0.39753934271555236
+Maximum:              4.07379632172524
+Minimum:              2.1016414312034613
+
+- Utilisation
+
+Sample mean:          0.0022699993387916466
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+--------------------------- Disk ---------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          4.018364184170603
+Sample variance:      0.15409854518869104
+Sample std deviation: 0.39255387552371845
+Maximum:              5.07379632172524
+Minimum:              3.1016414312034613
+
+- Utilisation
+
+Sample mean:          0.003134565457251901
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
+------------------------- Response -------------------------
+
+- Queue length
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              1.0
+Minimum:              0.0
+
+- Service time
+
+Sample mean:          4.982215249779922
+Sample variance:      1.0469630492717994
+Sample std deviation: 1.0232121233018105
+Maximum:              8.113860209225095
+Minimum:              2.224838136768085
+
+- Utilisation
+
+Sample mean:          0.012456497402148017
+
+- Waiting time
+
+Sample mean:          0.0
+Sample variance:      0.0
+Sample std deviation: 0.0
+Maximum:              0.0
+Minimum:              0.0
+
